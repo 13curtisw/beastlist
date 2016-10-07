@@ -8,13 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CDDBFA7E1D958D1900E70FE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDBFA7D1D958D1900E70FE3 /* AppDelegate.swift */; };
-		CDDBFA801D958D1900E70FE3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDBFA7F1D958D1900E70FE3 /* ViewController.swift */; };
+		CDDBFA801D958D1900E70FE3 /* BeastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDBFA7F1D958D1900E70FE3 /* BeastViewController.swift */; };
 		CDDBFA831D958D1900E70FE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDDBFA811D958D1900E70FE3 /* Main.storyboard */; };
 		CDDBFA861D958D1900E70FE3 /* BeastList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CDDBFA841D958D1900E70FE3 /* BeastList.xcdatamodeld */; };
 		CDDBFA881D958D1900E70FE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDDBFA871D958D1900E70FE3 /* Assets.xcassets */; };
 		CDDBFA8B1D958D1900E70FE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDDBFA891D958D1900E70FE3 /* LaunchScreen.storyboard */; };
 		CDDBFA961D958D1900E70FE3 /* BeastListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDBFA951D958D1900E70FE3 /* BeastListTests.swift */; };
 		CDDBFAA11D958D1900E70FE3 /* BeastListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDBFAA01D958D1900E70FE3 /* BeastListUITests.swift */; };
+		CDDBFAB01D958E1300E70FE3 /* Beast+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDBFAAE1D958E1300E70FE3 /* Beast+CoreDataProperties.swift */; };
+		CDDBFAB11D958E1300E70FE3 /* Beast.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDBFAAF1D958E1300E70FE3 /* Beast.swift */; };
+		CDDBFAB31D95900F00E70FE3 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDBFAB21D95900F00E70FE3 /* CustomCell.swift */; };
+		CDDBFAB51D9594AC00E70FE3 /* AddBeastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDBFAB41D9594AC00E70FE3 /* AddBeastViewController.swift */; };
+		CDDBFAB71D95955800E70FE3 /* AddBeastViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDBFAB61D95955800E70FE3 /* AddBeastViewControllerDelegate.swift */; };
+		CDDBFAB91D9595F500E70FE3 /* CancelButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDBFAB81D9595F500E70FE3 /* CancelButtonDelegate.swift */; };
+		CDDBFABB1D95A31800E70FE3 /* BeastedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDBFABA1D95A31800E70FE3 /* BeastedViewController.swift */; };
+		CDDBFABE1D95A57100E70FE3 /* Beasted+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDBFABC1D95A57100E70FE3 /* Beasted+CoreDataProperties.swift */; };
+		CDDBFABF1D95A57100E70FE3 /* Beasted.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDBFABD1D95A57100E70FE3 /* Beasted.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +46,7 @@
 /* Begin PBXFileReference section */
 		CDDBFA7A1D958D1900E70FE3 /* BeastList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeastList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDDBFA7D1D958D1900E70FE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDDBFA7F1D958D1900E70FE3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CDDBFA7F1D958D1900E70FE3 /* BeastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastViewController.swift; sourceTree = "<group>"; };
 		CDDBFA821D958D1900E70FE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDDBFA851D958D1900E70FE3 /* BeastList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeastList.xcdatamodel; sourceTree = "<group>"; };
 		CDDBFA871D958D1900E70FE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +58,15 @@
 		CDDBFA9C1D958D1900E70FE3 /* BeastListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeastListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDDBFAA01D958D1900E70FE3 /* BeastListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeastListUITests.swift; sourceTree = "<group>"; };
 		CDDBFAA21D958D1900E70FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDDBFAAE1D958E1300E70FE3 /* Beast+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Beast+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CDDBFAAF1D958E1300E70FE3 /* Beast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beast.swift; sourceTree = "<group>"; };
+		CDDBFAB21D95900F00E70FE3 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		CDDBFAB41D9594AC00E70FE3 /* AddBeastViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBeastViewController.swift; sourceTree = "<group>"; };
+		CDDBFAB61D95955800E70FE3 /* AddBeastViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBeastViewControllerDelegate.swift; sourceTree = "<group>"; };
+		CDDBFAB81D9595F500E70FE3 /* CancelButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CancelButtonDelegate.swift; sourceTree = "<group>"; };
+		CDDBFABA1D95A31800E70FE3 /* BeastedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeastedViewController.swift; sourceTree = "<group>"; };
+		CDDBFABC1D95A57100E70FE3 /* Beasted+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Beasted+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CDDBFABD1D95A57100E70FE3 /* Beasted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beasted.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +97,10 @@
 		CDDBFA711D958D1900E70FE3 = {
 			isa = PBXGroup;
 			children = (
+				CDDBFABC1D95A57100E70FE3 /* Beasted+CoreDataProperties.swift */,
+				CDDBFABD1D95A57100E70FE3 /* Beasted.swift */,
+				CDDBFAAE1D958E1300E70FE3 /* Beast+CoreDataProperties.swift */,
+				CDDBFAAF1D958E1300E70FE3 /* Beast.swift */,
 				CDDBFA7C1D958D1900E70FE3 /* BeastList */,
 				CDDBFA941D958D1900E70FE3 /* BeastListTests */,
 				CDDBFA9F1D958D1900E70FE3 /* BeastListUITests */,
@@ -100,12 +122,17 @@
 			isa = PBXGroup;
 			children = (
 				CDDBFA7D1D958D1900E70FE3 /* AppDelegate.swift */,
-				CDDBFA7F1D958D1900E70FE3 /* ViewController.swift */,
+				CDDBFA7F1D958D1900E70FE3 /* BeastViewController.swift */,
 				CDDBFA811D958D1900E70FE3 /* Main.storyboard */,
 				CDDBFA871D958D1900E70FE3 /* Assets.xcassets */,
 				CDDBFA891D958D1900E70FE3 /* LaunchScreen.storyboard */,
 				CDDBFA8C1D958D1900E70FE3 /* Info.plist */,
 				CDDBFA841D958D1900E70FE3 /* BeastList.xcdatamodeld */,
+				CDDBFAB21D95900F00E70FE3 /* CustomCell.swift */,
+				CDDBFAB41D9594AC00E70FE3 /* AddBeastViewController.swift */,
+				CDDBFAB61D95955800E70FE3 /* AddBeastViewControllerDelegate.swift */,
+				CDDBFAB81D9595F500E70FE3 /* CancelButtonDelegate.swift */,
+				CDDBFABA1D95A31800E70FE3 /* BeastedViewController.swift */,
 			);
 			path = BeastList;
 			sourceTree = "<group>";
@@ -259,9 +286,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDDBFA801D958D1900E70FE3 /* ViewController.swift in Sources */,
+				CDDBFA801D958D1900E70FE3 /* BeastViewController.swift in Sources */,
+				CDDBFAB71D95955800E70FE3 /* AddBeastViewControllerDelegate.swift in Sources */,
+				CDDBFAB11D958E1300E70FE3 /* Beast.swift in Sources */,
+				CDDBFABE1D95A57100E70FE3 /* Beasted+CoreDataProperties.swift in Sources */,
+				CDDBFABF1D95A57100E70FE3 /* Beasted.swift in Sources */,
 				CDDBFA7E1D958D1900E70FE3 /* AppDelegate.swift in Sources */,
 				CDDBFA861D958D1900E70FE3 /* BeastList.xcdatamodeld in Sources */,
+				CDDBFAB31D95900F00E70FE3 /* CustomCell.swift in Sources */,
+				CDDBFAB51D9594AC00E70FE3 /* AddBeastViewController.swift in Sources */,
+				CDDBFABB1D95A31800E70FE3 /* BeastedViewController.swift in Sources */,
+				CDDBFAB01D958E1300E70FE3 /* Beast+CoreDataProperties.swift in Sources */,
+				CDDBFAB91D9595F500E70FE3 /* CancelButtonDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
